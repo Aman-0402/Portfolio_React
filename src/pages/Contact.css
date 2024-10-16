@@ -1,0 +1,140 @@
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('../assets/four.jpg'); /* Your custom background */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #9A79FF; /* Neon color */
+    text-shadow: 0 0 10px #9A79FF, 0 0 20px #9A79FF;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 5px #9A79FF, 0 0 10px #9A79FF;
+    }
+    to {
+      text-shadow: 0 0 15px #9A79FF, 0 0 30px #9A79FF;
+    }
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px #9A79FF, 0 0 15px #9A79FF; /* Neon effect */
+  }
+  
+  .submit-button {
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #9A79FF;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #9A79FF;
+    box-shadow: 0 0 10px #9A79FF, 0 0 15px #9A79FF; /* Neon effect */
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    margin: 0 15px;
+    font-size: 3rem; /* Increased icon size */
+    transition: all 0.3s ease;
+  }
+  
+  .icon {
+    color: #9A79FF;
+    transition: all 0.3s ease;
+    /* Adding neon-like glow */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+  
+  .icon:hover {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 40px rgba(255, 255, 255, 1);
+    transform: scale(1.1); /* Slight zoom effect */
+  }
+  
+  /* Neon hover colors for each icon */
+  .linkedin:hover {
+    color: #0077b5;
+    text-shadow: 0 0 10px #0077b5, 0 0 20px #0077b5, 0 0 30px #0077b5;
+  }
+  
+  .github:hover {
+    color: #333;
+    text-shadow: 0 0 10px #333, 0 0 20px #333, 0 0 30px #333;
+  }
+  
+  .instagram:hover {
+    color: #e1306c;
+    text-shadow: 0 0 10px #e1306c, 0 0 20px #e1306c, 0 0 30px #e1306c;
+  }
+  
+  .whatsapp:hover {
+    color: #25D366;
+    text-shadow: 0 0 10px #25D366, 0 0 20px #25D366, 0 0 30px #25D366;
+  }
+  
+  .back-home-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    background-color: #FF6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .back-home-button:hover {
+    background-color: #FF4500;
+    transform: scale(1.05);
+  }
+  

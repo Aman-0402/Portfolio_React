@@ -1,0 +1,63 @@
+/* src/components/Skills.css */
+
+.skills-section {
+    padding: 80px 0;
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+  }
+  
+  .skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .skills-heading {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  
+  .skills-category {
+    margin-bottom: 40px;
+  }
+  
+  .skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .skill {
+    text-align: center;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .skill p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+  }
+  
+  .skill:hover {
+    transform: scale(1.1);
+  }
+  .back-home-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    background-color: #FF6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .back-home-button:hover {
+    background-color: #FF4500;
+    transform: scale(1.05);
+  }

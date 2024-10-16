@@ -1,0 +1,108 @@
+
+/* Neon Effect for Links */
+.neon-link {
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 3px solid #00ffff; /* Neon border color */
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  box-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff, 0 0 50px #00ffff;
+  transition: all 0.3s ease;
+}
+
+/* Hover state to enhance the glowing effect */
+.neon-link:hover {
+  box-shadow: 0 0 30px #00ffff, 0 0 60px #00ffff, 0 0 90px #00ffff, 0 0 120px #00ffff;
+  background-color: rgba(0, 255, 255, 0.2); /* Slight glowing background */
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+}
+
+/* Navigation links styling */
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-list li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.landing-header h1 {
+  color: #fff;
+}
+
+.landing-header p {
+  color: #ddd;
+}
+
+.landing-page {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/five.png'); /* Custom background */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.landing-footer {
+  margin-top: 50px;
+  font-size: 2rem;
+  color: #fff;
+}
+.landing-header h1 {
+  font-size: 5rem;
+  color: #ffffff;
+  opacity: 100;
+  animation: fade-in 2s forwards;
+}
+/* Animations */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.landing-header h2 {
+  font-size: 3rem;
+  color: #ffffff;
+  opacity: 100;
+  animation: fade-in 2s forwards;
+}
+/* Animations */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.landing-header p {
+  font-size: 2rem;
+  color: #ffffff;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slide-up 2s 0.5s forwards;
+}
+@keyframes slide-up {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,115 @@
+/* Center the loader and make it larger */
+.loader {
+    width: 200px; /* Increased width */
+    height: 120px; /* Increased height */
+    position: fixed; /* Fixed position for centering */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Ensure perfect centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loader-text {
+    position: absolute;
+    top: -40px; /* Adjusted for larger size */
+    padding: 0;
+    margin: 0;
+    color: #0080ff;
+    animation: text_713 5s ease both infinite;
+    font-size: 5rem; /* Larger text */
+    letter-spacing: 1px;
+  }
+  
+  .load {
+    background-color: #ac55f8;
+    border-radius: 50px;
+    display: block;
+    height: 32px; /* Increased size */
+    width: 32px;
+    bottom: 0;
+    position: absolute;
+    transform: translateX(120px); /* Adjusted to new size */
+    animation: loading_713 5s ease both infinite;
+  }
+  
+  .load::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #61cfff;
+    border-radius: inherit;
+    animation: loading2_713 5s ease both infinite;
+  }
+  
+  @keyframes text_713 {
+    0% {
+      letter-spacing: 1px;
+      transform: translateX(0px);
+    }
+    40% {
+      letter-spacing: 2px;
+      transform: translateX(40px); /* Adjusted for larger size */
+    }
+    80% {
+      letter-spacing: 1px;
+      transform: translateX(48px);
+    }
+    90% {
+      letter-spacing: 2px;
+      transform: translateX(0px);
+    }
+    100% {
+      letter-spacing: 1px;
+      transform: translateX(0px);
+    }
+  }
+  
+  @keyframes loading_713 {
+    0% {
+      width: 32px;
+      transform: translateX(0px);
+    }
+    40% {
+      width: 100%;
+      transform: translateX(0px);
+    }
+    80% {
+      width: 32px;
+      transform: translateX(120px); /* Adjusted */
+    }
+    90% {
+      width: 100%;
+      transform: translateX(0px);
+    }
+    100% {
+      width: 32px;
+      transform: translateX(0px);
+    }
+  }
+  
+  @keyframes loading2_713 {
+    0% {
+      transform: translateX(0px);
+      width: 32px;
+    }
+    40% {
+      transform: translateX(0%);
+      width: 80%;
+    }
+    80% {
+      width: 100%;
+      transform: translateX(0px);
+    }
+    90% {
+      width: 80%;
+      transform: translateX(25px); /* Adjusted */
+    }
+    100% {
+      transform: translateX(0px);
+      width: 32px;
+    }
+  }
+  
